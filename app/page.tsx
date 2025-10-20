@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import InfiniteGallery from "@/components/InfiniteGallery"
+import InfiniteGallery from "@/components/IntroPage/InfiniteGallery"
 
 export default function Home() {
   const router = useRouter()

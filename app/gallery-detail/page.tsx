@@ -2,7 +2,10 @@
 
 import Hero from "@/components/MainPage/Hero"
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { useState } from "react";
+import ZoomParallax from "@/components/MainPage/ZoomParallax";
+import { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
 
 export default function GalleryDetail() {
   const router = useRouter()
@@ -15,11 +18,23 @@ export default function GalleryDetail() {
     }, 600)
   }
 
+  useEffect( () => {
+        const lenis = new Lenis()
+       
+        function raf(time : number) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+  },[]);
+
   return (
     <main
       className={`min-h-screen bg-black transition-opacity duration-600 animate-fade-in ${isFadingOut ? "opacity-0" : "opacity-100"}`}
     >
       <Hero />
+      <ZoomParallax />
       
       {/* <div className="flex items-center justify-center h-screen">
         <div className="text-center">

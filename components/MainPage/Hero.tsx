@@ -36,9 +36,6 @@ export default function Hero() {
     if(xPercent > 0) {
       xPercent = -100;
     }
-    // else if (xPercent > 0) {
-    //   xPercent = -100;
-    // }
 
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });

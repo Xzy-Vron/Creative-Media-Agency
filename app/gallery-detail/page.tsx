@@ -1,5 +1,6 @@
 "use client"
 
+import Hero from "@/components/MainPage/Hero"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 
@@ -18,7 +19,9 @@ export default function GalleryDetail() {
     <main
       className={`min-h-screen bg-black transition-opacity duration-600 animate-fade-in ${isFadingOut ? "opacity-0" : "opacity-100"}`}
     >
-      <div className="flex items-center justify-center h-screen">
+      <Hero />
+      
+      {/* <div className="flex items-center justify-center h-screen">
         <div className="text-center">
           <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">Gallery Detail</h1>
           <p className="text-gray-400 mb-8 text-lg">This page opens with the same background color as the canvas</p>
@@ -29,7 +32,7 @@ export default function GalleryDetail() {
             ← Back to Gallery
           </button>
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }

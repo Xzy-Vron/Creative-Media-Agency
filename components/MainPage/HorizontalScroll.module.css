@@ -1,0 +1,50 @@
+.outerDiv {
+  overflow: hidden;
+}
+
+.innerDiv {
+  height : 100vh;
+  width: 460vw;
+  /* flex-wrap: nowrap; */
+  /* flex-shrink: none; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start ;
+}
+
+.innerDiv > h1 {
+   font-size: 45vw;
+   font-weight: 600;
+   /* Center the text */
+}
+
+.card {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+#cardOne {
+  top: 10%;
+  left: 15%;
+}
+
+#cardTwo {
+  top: 60%;
+  left: 30%;
+}
+
+
+#cardThree {
+  top: 45%;
+  left: 60%;
+}
+
+#cardFour {
+  top: 15%;
+  left: 80%;
+}

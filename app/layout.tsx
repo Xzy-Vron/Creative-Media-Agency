@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body  className={`${geistMono.variable} ${instrumentSerif.variable} m-0 antialiased`}>
+      <body  className={`${geistMono.variable}  ${instrumentSerif.variable} m-0 antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

@@ -7,8 +7,9 @@ import ZoomParallax from "@/components/MainPage/ZoomParallax";
 import Paragraph from "@/components/MainPage/ScrollParagraph";
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
-import Index from "@/components/MainPage/ParallaxScroll";
+import ParallaxScroll from "@/components/MainPage/ParallaxScroll";
 import HorizontalScroll from "@/components/MainPage/HorizontalScroll";
+import Footer from "@/components/MainPage/StickyFooter";
 
 
 export default function GalleryDetail() {
@@ -39,13 +40,14 @@ export default function GalleryDetail() {
     >
       <Hero />
       <ZoomParallax />
-      <Paragraph />
+      <ParallaxScroll />
       <HorizontalScroll />
-      <Index />
+      <Paragraph />
+      <Footer />
      
 
       
-      <div className="flex items-center justify-center h-screen">
+      {/* <div className="flex items-center justify-center h-screen">
         <div className="text-center">
           <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">Gallery Detail</h1>
           <p className="text-gray-400 mb-8 text-lg">This page opens with the same background color as the canvas</p>
@@ -56,7 +58,7 @@ export default function GalleryDetail() {
             ← Back to Gallery
           </button>
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }

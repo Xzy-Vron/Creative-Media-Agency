@@ -138,3 +138,32 @@
     animation: fadeIn 0.6s ease-in-out;
   }
 }
+
+body{
+  font-family: 'Regular';
+  background-color: black;
+  margin: 0px;
+}
+
+.introLine{
+  display: flex;
+  font-size: 6vw;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.introLine p{
+  margin: 0px;
+}
+
+.introLine:nth-of-type(5), .introLine:nth-of-type(6){
+  display: inline-flex;
+}
+.introLine:nth-of-type(6){
+  right: -40px;
+  position: relative;
+}
+
+.introLine p{
+  margin: 0px;
+}
